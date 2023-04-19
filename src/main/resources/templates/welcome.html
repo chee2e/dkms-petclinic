@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
+
+<body>
+<div class="login-box">
+  <form class="form-login" action="/login" method="post">
+    <div>
+      <label th:for="username">ID</label>
+      <input type="text" class="form-control" name="id" placeholder="Please enter your ID">
+    </div>
+    <div>
+      <label th:for="password">Password</label>
+      <input type="password" class="form-control" name="pw" placeholder="Please enter your Password">
+    </div>
+    <button class="btn btn-primary" type="submit"> Sign up</button>
+  </form>
+</div>
+</body>
+
+</html>
